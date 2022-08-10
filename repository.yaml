@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Blake Oliver's personal homeassistant add-ons repository
+url: 'https://github.com/oliver2213/ha-addons'
+maintainer: Blake Oliver <oliver22213@me.com>
