@@ -8,6 +8,4 @@ MQTT_USERNAME=$(bashio::config 'mqtt_username')
 MQTT_PASSWORD=$(bashio::config 'mqtt_password')
 send_raw=$(bashio::config 'send_raw')
 
-bashio::log.info "$(./rtlamr --version)"
-bashio::log.info "Starting metermon..."
 python -u metermon.py
