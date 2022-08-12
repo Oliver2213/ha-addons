@@ -16,7 +16,6 @@ RUN \
 COPY rootfs /
 
 RUN \
-    chmod a+x /run.sh && \
-    chmod a+x /etc/services.d/rtl_tcp
+    chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
