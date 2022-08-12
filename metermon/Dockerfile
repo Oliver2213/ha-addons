@@ -12,19 +12,14 @@ RUN \
 RUN \
     apk add --no-cache go git python3 py3-paho-mqtt
 
-# RUN go install github.com/bemasher/rtlamr@latest
+RUN go install github.com/bemasher/rtlamr@latest
 
-RUN git clone https://github.com/bemasher/rtlamr.git /go/src/github.com/bemasher/rtlamr &&\
-    git clone https://github.com/bemasher/rtltcp.git /go/src/github.com/bemasher/rtltcp &&\
-    git clone https://github.com/pkg/errors.git /go/src/github.com/pkg/errors
+#WORKDIR /go/src/github.com/bemasher/rtlamr
 
-WORKDIR /go/src/github.com/bemasher/rtlamr
-
-RUN go install
+#RUN go install
 
 ADD metermon.py .
 
-RUN cp $HOME/go/bin/rtlamr ./
+RUN mv $HOME/go/bin/rtlamr ./
 
-RUN ls -a
 CMD ["python3", "-u", "./metermon.py"]
