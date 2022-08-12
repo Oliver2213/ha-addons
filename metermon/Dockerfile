@@ -10,7 +10,7 @@ RUN \
 
 # Install python3 and paho-mqtt
 RUN \
-    apk add --no-cache python3 py3-paho-mqtt
+    apk add --no-cache git python3 py3-paho-mqtt
 
 # RUN go install github.com/bemasher/rtlamr@latest
 
