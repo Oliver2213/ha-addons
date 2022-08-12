@@ -1,0 +1,28 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: metermon
+version: "0.0.1"
+slug: metermon
+stage: experimental
+description: Metermon, a python script which connects to rtl_tcp and outputs various meter measurements to mqtt
+url: "https://github.com/Oliver2213/ha-addons/tree/main/metermon"
+startup: application
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+options:
+  rtl_host: 127.0.0.1
+  rtl_port: 1234
+  mqtt_host: 127.0.0.1
+  mqtt_port: 1883
+  send_by_id: true
+schema:
+  rtl_host: str?
+  rtl_port: str?
+  mqtt_host: str?
+  mqtt_port: str?
+  send_by_id: bool?
+
