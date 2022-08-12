@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: rtl_tcp
-version: "0.1.3"
+version: "0.1.4"
 slug: rtl_tcp
 stage: experimental
 description: An add-on running rtl_tcp, allowing use of an attached rtl-sdr over the network or by other add-ons.
