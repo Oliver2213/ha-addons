@@ -20,9 +20,9 @@ RUN go install github.com/bemasher/rtlamr@latest
 
 ADD metermon.py .
 ADD run.sh .
+RUN chmod a+x run.sh
 
 RUN mv $HOME/go/bin/rtlamr ./
-RUN ./rtlamr --version
 
 # CMD ["python3", "-u", "./metermon.py"]
-CMD [ "./run.sh' ]
+CMD [ "./run.sh" ]
