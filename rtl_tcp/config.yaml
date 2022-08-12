@@ -1,7 +1,8 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: rtl_tcp
 version: "0.0.1"
-slug: example
+slug: rtl_tcp
+stage: experimental
 description: An add-on running rtl_tcp, allowing use of an attached rtl-sdr over the network or by other add-ons.
 url: "https://github.com/Oliver2213/ha-addons/tree/main/rtl_tcp"
 arch:
@@ -14,7 +15,17 @@ init: false
 map:
   - share:rw
 options:
-  # vars...
+  address: "0.0.0.0:1234"
+  device_index: "0"
+  port: 1234
 schema:
-  # schema...
+  address: str?
+  device_index: str?
+  port: str?
+
 # immage...
+
+ports:
+  1234/tcp: 1234
+ports_description:
+  1234/tcp: port to control and receive samples from the SDR
