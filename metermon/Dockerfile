@@ -8,9 +8,9 @@ RUN \
     curl -sSLf -o /usr/bin/tempio \
     "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}"
 
-# Install python3 and paho-mqtt
+# Install go, python3 and paho-mqtt
 RUN \
-    apk add --no-cache git python3 py3-paho-mqtt
+    apk add --no-cache go git python3 py3-paho-mqtt
 
 # RUN go install github.com/bemasher/rtlamr@latest
 
