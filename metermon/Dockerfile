@@ -24,4 +24,6 @@ RUN go install
 
 ADD metermon.py .
 
+Run cp ~/go/bin/rtlamr .
+
 CMD ["python3", "-u", "./metermon.py"]
