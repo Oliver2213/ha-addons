@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import os
 import sys
 import json
@@ -72,7 +72,7 @@ client.loop_start()
 
 # start RTLAMR
 cmdargs = [
-    'rtlamr',
+    './rtlamr',
     '-format=json',
     f'-server={RTL_TCP_SERVER}',
     f'-msgtype={RTLAMR_MSGTYPE}',

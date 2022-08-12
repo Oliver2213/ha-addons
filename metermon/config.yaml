@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: metermon
-version: "0.0.9"
+version: "0.0.10"
 slug: metermon
 stage: experimental
 description: Metermon, a python script which connects to rtl_tcp and outputs various meter measurements to mqtt
