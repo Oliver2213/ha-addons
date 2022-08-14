@@ -5,7 +5,6 @@ slug: mimic3tts
 stage: experimental
 description: "Mimic3, a fast and offline neural tts system"
 url: "https://github.com/Oliver2213/ha-addons/tree/main/mimic3-tts-server"
-startup: application
 arch:
   - armhf
   - armv7
