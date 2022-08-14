@@ -2,6 +2,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
+LABEL org.opencontainers.image.source=https://github.com/Oliver2213/ha-addons
 # RUN apk add --no-cache git espeak espeak-dev
 RUN apt-get update && apt-get install -y libespeak-ng1 python3 python3-pip python3-venv git
 RUN git clone --depth=1 https://github.com/MycroftAI/mimic3
