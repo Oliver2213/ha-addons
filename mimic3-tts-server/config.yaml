@@ -1,0 +1,23 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: metermon
+version: "0.0.1"
+slug: mimic3-tts-server
+stage: experimental
+description: Mimic3, a fast and offline neural tts system
+url: "https://github.com/Oliver2213/ha-addons/tree/main/mimic3-tts-server"
+startup: application
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+options:
+
+schema:
+
+ports:
+  59125/tcp: 59125
+ports_description:
+  59125/tcp: Port for mimic3-server
