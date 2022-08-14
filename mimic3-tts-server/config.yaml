@@ -1,7 +1,7 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: mimic3 TTS server
+name: "Mimic3 TTS Server"
 version: "0.0.1"
-slug: mimic3-tts-server
+slug: mimic3_tts_server
 stage: experimental
 description: Mimic3, a fast and offline neural tts system
 url: "https://github.com/Oliver2213/ha-addons/tree/main/mimic3-tts-server"
