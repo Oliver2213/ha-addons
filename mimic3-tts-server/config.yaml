@@ -1,5 +1,5 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: metermon
+name: mimic3 TTS server
 version: "0.0.1"
 slug: mimic3-tts-server
 stage: experimental
