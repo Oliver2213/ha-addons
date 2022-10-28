@@ -5,6 +5,7 @@ slug: rtl_tcp
 stage: experimental
 description: An add-on running rtl_tcp, allowing use of an attached rtl-sdr over the network or by other add-ons.
 url: "https://github.com/Oliver2213/ha-addons/tree/main/rtl_tcp"
+image: ghcr.io/oliver2213/{arch}-rtl_tcp
 usb: true
 # Start before homeassistant.
 startup: services
