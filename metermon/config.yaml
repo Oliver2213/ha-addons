@@ -5,6 +5,7 @@ slug: metermon
 stage: experimental
 description: Metermon, a python script which connects to rtl_tcp and outputs various meter measurements to mqtt
 url: "https://github.com/Oliver2213/ha-addons/tree/main/metermon"
+image: ghcr.io/oliver2213/{arch}-metermon
 arch:
   - armhf
   - armv7
